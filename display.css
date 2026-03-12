@@ -1,0 +1,173 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI;
+}
+
+
+/* NAVBAR */
+
+.container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:black;
+}
+
+.logo h2{
+color:white;
+font-size:22px;
+animation:glow 2s infinite alternate;
+}
+
+/* glowing animation */
+
+@keyframes glow{
+
+from{
+text-shadow:0 0 5px red,
+0 0 10px red,
+0 0 15px red;
+}
+
+to{
+text-shadow:0 0 5px blue,
+0 0 10px blue,
+0 0 20px blue;
+}
+
+}
+
+
+
+.menu{
+display:flex;
+gap:40px;
+list-style:none;
+text-transform:uppercase;
+}
+
+.menu li a{
+text-decoration:none;
+color:white;
+font-size:16px;
+}
+
+.menu li a:hover{
+color:red;
+}
+
+
+/* HIRE BUTTON */
+
+.container-btn button{
+padding:10px 20px;
+background:red;
+color:white;
+border:none;
+border-radius:4px;
+cursor:pointer;
+text-transform:uppercase;
+}
+
+.container-btn button:hover{
+background:white;
+color:black;
+}
+
+
+/* HERO SECTION */
+
+.main{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:80px;
+padding:80px;
+background:linear-gradient(to right,lightgray,lightcyan);
+min-height:calc(100vh - 70px);
+}
+
+}
+
+
+/* TEXT */
+
+.text{
+max-width:500px;
+}
+
+.text h3{
+font-size:22px;
+margin-bottom:10px;
+}
+
+.text h1{
+font-size:45px;
+margin-bottom:10px;
+}
+
+.text h1 span{
+color:orangered;
+}
+
+.text h2{
+color:teal;
+margin-bottom:15px;
+}
+
+.text p{
+line-height:1.6;
+margin-bottom:20px;
+}
+
+
+/* SOCIAL ICONS */
+
+.social{
+margin-bottom:20px;
+}
+
+.social a{
+font-size:24px;
+margin-right:15px;
+}
+
+.fa-facebook{color:#1877f2;}
+.fa-instagram{color:#e1306c;}
+.fa-linkedin{color:#0a66c2;}
+
+
+/* HERO BUTTONS */
+
+.hero-buttons button{
+padding:10px 20px;
+margin-right:10px;
+border:none;
+background:red;
+color:white;
+border-radius:4px;
+cursor:pointer;
+}
+
+.hero-buttons button:hover{
+background:black;
+}
+
+
+/* IMAGE */
+
+.image img{
+width:300px;
+height:300px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid cyan;
+/* 3 glow colors */
+box-shadow:
+0 0 20px lightseagreen,
+0 0 40px lightgray,
+0 0 60px lightcyan;
+}
